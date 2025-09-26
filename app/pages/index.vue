@@ -1,3 +1,3 @@
 <template>
-  <h1>ini root path</h1>
+  <h1 class="text-white">ini root path</h1>
 </template>
