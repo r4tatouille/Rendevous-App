@@ -1,5 +1,7 @@
 <template>
-  <nav class="flex items-center justify-between p-4 border-b bg-slate-900">
+  <nav
+    class="flex items-center justify-between p-4 border-b border-amber-500 bg-slate-900"
+  >
     <!-- Logo + Icon -->
     <div class="flex items-center space-x-2">
       <NuxtLink to="/" class="flex items-center space-x-1">
@@ -15,10 +17,14 @@
     </div>
 
     <!-- Menu kanan -->
-    <div class="flex items-center space-x-6">
-      <NuxtLink to="/" class="hover:text-yellow-500 transition">Home</NuxtLink>
-      <NuxtLink to="/registration" class="hover:text-yellow-500 transition"
+    <div class="flex items-center space-x-10">
+      <NuxtLink
+        to="/registration"
+        class="text-white hover:text-yellow-500 transition"
         >Registration</NuxtLink
+      >
+      <NuxtLink to="/login" class="text-white hover:text-yellow-500 transition"
+        >Logout</NuxtLink
       >
     </div>
   </nav>

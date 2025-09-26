@@ -14,6 +14,7 @@ export default defineNuxtConfig({
         },
       ],
     },
-    pageTransition: { name: "page", mode: "out-in" },
+    // transisi pindah halaman
+    // pageTransition: { name: "page", mode: "out-in" },
   },
 });

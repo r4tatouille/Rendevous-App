@@ -1,3 +1,3 @@
 <template>
-  <h1>ini registration</h1>
+  <h1>ini adalah registration</h1>
 </template>
