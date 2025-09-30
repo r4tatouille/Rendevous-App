@@ -29,7 +29,7 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
   <!-- Container utama -->
   <div class="flex items-center justify-center min-h-screen pb-70">
     <!-- Card Login -->
-    <UCard variant="solid" class="w-full max-w-md p-6 border-b-old-neutral-800">
+    <UCard variant="solid" class="w-full max-w-md p-6">
       <UForm
         :schema="schema"
         :state="state"

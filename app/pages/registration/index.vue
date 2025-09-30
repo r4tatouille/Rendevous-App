@@ -44,12 +44,10 @@ function deleteUser(id: number) {
 </script>
 
 <template>
-  <div
-    class="flex items-center justify-center min-h-screen bg-slate-950 text-white"
-  >
-    <UCard class="w-full max-w-2xl p-6">
+  <div class="flex items-center justify-center min-h-screen">
+    <UCard class="w-full max-w-2xl p-6 bg-slate-900 border-gray-700">
       <template #header>
-        <h1 class="text-xl font-bold text-black">CRUD User Management</h1>
+        <h1 class="text-xl font-bold tetx-black">Input Data</h1>
       </template>
 
       <!-- Form -->
@@ -78,10 +76,10 @@ function deleteUser(id: number) {
           <tr
             v-for="user in users"
             :key="user.id"
-            class="border-b border-gray-700"
+            class="border-b border-gray-700 text-white"
           >
-            <td class="p-2 text-black">{{ user.name }}</td>
-            <td class="p-2 text-black">{{ user.email }}</td>
+            <td class="p-2 text-white">{{ user.name }}</td>
+            <td class="p-2 text-white">{{ user.email }}</td>
             <td class="p-2 space-x-2 text-black">
               <UButton size="xs" @click="editUser(user)"> Edit </UButton>
               <UButton size="xs" @click="deleteUser(user.id)"> Delete </UButton>

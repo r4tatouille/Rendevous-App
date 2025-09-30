@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="flex items-center justify-between p-4 border-b border-amber-500 bg-slate-900"
+    class="flex items-center justify-between p-4 border-b border-amber-500 bg-slate-900 top-0 left-0 sticky"
   >
     <!-- Logo + Icon -->
     <div class="flex items-center space-x-2">
