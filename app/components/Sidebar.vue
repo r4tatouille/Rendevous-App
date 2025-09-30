@@ -34,20 +34,6 @@ const items: NavigationMenuItem[][] = [
       ],
     },
   ],
-  [
-    {
-      label: "Feedback",
-      icon: "i-lucide-message-circle",
-      to: "https://github.com/nuxt-ui-templates/dashboard",
-      target: "_blank",
-    },
-    {
-      label: "Help & Support",
-      icon: "i-lucide-info",
-      to: "https://github.com/nuxt/ui",
-      target: "_blank",
-    },
-  ],
 ];
 </script>
 
@@ -94,19 +80,6 @@ const items: NavigationMenuItem[][] = [
         :items="items[1]"
         orientation="vertical"
         class="mt-auto"
-      />
-    </template>
-
-    <template #footer="{ collapsed }">
-      <UButton
-        :avatar="{
-          src: 'https://github.com/benjamincanac.png',
-        }"
-        :label="collapsed ? undefined : 'Benjamin'"
-        color="neutral"
-        variant="ghost"
-        class="w-full"
-        :block="collapsed"
       />
     </template>
   </UDashboardSidebar>

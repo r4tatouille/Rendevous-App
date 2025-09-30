@@ -1,9 +1,0 @@
-<template>
-  <UDashboardGroup>
-    <Sidebar></Sidebar>
-    <UDashboardPanel>
-      <Navbar></Navbar>
-      <slot></slot>
-    </UDashboardPanel>
-  </UDashboardGroup>
-</template>
