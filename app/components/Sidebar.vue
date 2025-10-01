@@ -6,21 +6,12 @@ const items: NavigationMenuItem[][] = [
     {
       label: "Home",
       icon: "i-lucide-house",
-      active: true,
-    },
-    {
-      label: "Inbox",
-      icon: "i-lucide-inbox",
-      badge: "4",
-    },
-    {
-      label: "Contacts",
-      icon: "i-lucide-users",
+      active: false,
     },
     {
       label: "Settings",
       icon: "i-lucide-settings",
-      defaultOpen: true,
+      defaultOpen: false,
       children: [
         {
           label: "General",
@@ -41,6 +32,7 @@ const items: NavigationMenuItem[][] = [
   <UDashboardSidebar
     collapsible
     resizable
+    color: black
     :ui="{ footer: 'border-t border-default' }"
   >
     <!-- <template #header="{ collapsed }">
