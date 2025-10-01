@@ -23,8 +23,7 @@
         class="text-white hover:text-yellow-500 transition"
         >Registration</NuxtLink
       >
-      <NuxtLink to="/login" class="text-white hover:text-yellow-500 transition"
-        >Logout</NuxtLink
+      <Hamburger></Hamburger>
       >
     </div>
   </nav>

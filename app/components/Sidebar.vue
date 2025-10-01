@@ -43,20 +43,20 @@ const items: NavigationMenuItem[][] = [
     resizable
     :ui="{ footer: 'border-t border-default' }"
   >
-    <template #header="{ collapsed }">
+    <!-- <template #header="{ collapsed }">
       <Logo v-if="!collapsed" class="h-5 w-auto shrink-0" />
       <UIcon
         v-else
         name="i-simple-icons-nuxtdotjs"
         class="size-5 text-primary mx-auto"
       />
-    </template>
+    </template> -->
 
     <template #default="{ collapsed }">
       <UButton
         :label="collapsed ? undefined : 'Search...'"
         icon="i-lucide-search"
-        color="neutral"
+        color="success"
         variant="outline"
         block
         :square="collapsed"
