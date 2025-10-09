@@ -3,11 +3,7 @@
 const layout = "main";
 </script>
 <template>
-  <UApp>
-    <NuxtLayout :name="layout">
-      <div class="min-h-screen bg-slate-950">
-        <NuxtPage />
-      </div>
-    </NuxtLayout>
-  </UApp>
+  <NuxtLayout :name="layout">
+    <NuxtPage />
+  </NuxtLayout>
 </template>

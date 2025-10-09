@@ -2,7 +2,7 @@
 import type { DropdownMenuItem } from "@nuxt/ui";
 import type { success } from "zod";
 
-const items = ref<DropdownMenuItem[]>([
+const items = <DropdownMenuItem[]>[
   {
     label: "Profile",
     icon: "i-lucide-user",
@@ -15,7 +15,7 @@ const items = ref<DropdownMenuItem[]>([
     label: "Settings",
     icon: "i-lucide-cog",
   },
-]);
+];
 </script>
 
 <template>

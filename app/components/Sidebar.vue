@@ -30,8 +30,6 @@ const items: NavigationMenuItem[][] = [
 
 <template>
   <UDashboardSidebar
-    collapsible
-    resizable
     color: black
     :ui="{ footer: 'border-t border-default' }"
   >
@@ -63,8 +61,8 @@ const items: NavigationMenuItem[][] = [
 
       <UNavigationMenu
         :collapsed="collapsed"
-        :items="items[0]"
         orientation="vertical"
+        :items="items[0]"
       />
 
       <UNavigationMenu
