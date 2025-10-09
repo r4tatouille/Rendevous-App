@@ -1,11 +1,22 @@
 <template>
-  <main>
+  <main class="bg-slate-900">
     <div>
-      <Navbar />
-      <div class="container mx-auto mt-8 px-4">
+      <Navbar></Navbar>
+    </div>
+    <div class="flex">
+      <Sidebar></Sidebar>
+      <div class="flex-auto">
         <slot></slot>
       </div>
-      <Sidebar />
     </div>
   </main>
+  <!-- <Navbar />
+  <UDashboardGroup>
+    <sidebar />
+    <UDashboardPanel>
+      <template #header>
+        <slot></slot>
+      </template>
+    </UDashboardPanel>
+  </UDashboardGroup> -->
 </template>

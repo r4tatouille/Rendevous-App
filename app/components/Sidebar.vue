@@ -31,8 +31,10 @@ const items: NavigationMenuItem[][] = [
 <template>
   <UDashboardSidebar
     color: black
-    :ui="{ footer: 'border-t border-default' }"
+    :ui="{ root: ' border-amber-500 !min-h-[calc(100vh-65px)]' }" 
   >
+  <!-- Vh = tinggi layar -->
+  <!-- hitungan untuk height atau width dari layar -->
     <!-- <template #header="{ collapsed }">
       <Logo v-if="!collapsed" class="h-5 w-auto shrink-0" />
       <UIcon

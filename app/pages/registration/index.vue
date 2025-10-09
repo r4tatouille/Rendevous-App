@@ -44,7 +44,7 @@ function deleteUser(id: number) {
 </script>
 
 <template>
-  <div class="flex items-center justify-center min-h-screen">
+  <div class="flex items-center justify-center h-full">
     <UCard class="w-full max-w-2xl p-6 bg-slate-900 border-gray-700">
       <template #header>
         <h1 class="text-xl font-bold tetx-black">Input Data</h1>
@@ -64,29 +64,33 @@ function deleteUser(id: number) {
       </div>
 
       <!-- Table -->
-      <table class="w-full border border-gray-700 text-left">
-        <thead class="bg-gray-800">
-          <tr>
-            <th class="p-2 border-b border-gray-700">Name</th>
-            <th class="p-2 border-b border-gray-700">Email</th>
-            <th class="p-2 border-b border-gray-700">Actions</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr
-            v-for="user in users"
-            :key="user.id"
-            class="border-b border-gray-700 text-white"
-          >
-            <td class="p-2 text-white">{{ user.name }}</td>
-            <td class="p-2 text-white">{{ user.email }}</td>
-            <td class="p-2 space-x-2 text-black">
-              <UButton size="xs" @click="editUser(user)"> Edit </UButton>
-              <UButton size="xs" @click="deleteUser(user.id)"> Delete </UButton>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="overflow-auto">
+        <table class="w-full border border-gray-700 text-left">
+          <thead class="bg-gray-800">
+            <tr>
+              <th class="p-2 border-b border-gray-700">Name</th>
+              <th class="p-2 border-b border-gray-700">Email</th>
+              <th class="p-2 border-b border-gray-700">Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr
+              v-for="user in users"
+              :key="user.id"
+              class="border-b border-gray-700 text-white"
+            >
+              <td class="p-2 text-white">{{ user.name }}</td>
+              <td class="p-2 text-white">{{ user.email }}</td>
+              <td class="p-2 space-x-2 text-black">
+                <UButton size="xs" @click="editUser(user)"> Edit </UButton>
+                <UButton size="xs" @click="deleteUser(user.id)">
+                  Delete
+                </UButton>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </UCard>
   </div>
 </template>
