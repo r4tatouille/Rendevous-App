@@ -5,7 +5,7 @@
     </div>
     <div class="flex">
       <Sidebar></Sidebar>
-      <div class="flex-auto">
+      <div class="flex-auto bg-slate-950">
         <slot></slot>
       </div>
     </div>

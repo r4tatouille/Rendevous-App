@@ -19,7 +19,7 @@
     <!-- Menu kanan -->
     <div class="flex items-center space-x-10">
       <NuxtLink
-        to="/registration"
+        to="/registration/inputdata"
         class="text-white hover:text-yellow-500 transition"
         >Registration</NuxtLink
       >

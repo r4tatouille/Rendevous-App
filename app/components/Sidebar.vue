@@ -9,18 +9,21 @@ const items: NavigationMenuItem[][] = [
       active: false,
     },
     {
-      label: "Settings",
+      label: "Database",
       icon: "i-lucide-settings",
-      defaultOpen: false,
+      defaultOpen: true,
       children: [
         {
-          label: "General",
+          label: "Data View",
+          to:"registration/viewdata"
         },
         {
-          label: "Members",
+          label: "About",
         },
         {
-          label: "Notifications",
+          label: "Portofolio",
+          to:"/"
+          
         },
       ],
     },
