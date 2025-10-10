@@ -26,9 +26,13 @@ function deleteUser(id: number) {
 <template>
   <div class="items-center m-5">
     <UCard class="w-full max-w-2xl bg-slate-900 border-gray-700">
-      <div class="flex">
+      <div class="flex justify-between mb-5">
         <h1 class="text-white font-bold text-xl">Input Data</h1>
-        <UButton class="justify-between" variant="subtle" color="primary"
+        <UButton
+          class=""
+          to="/registration/inputdata"
+          variant="subtle"
+          color="primary"
           >Add New
         </UButton>
       </div>

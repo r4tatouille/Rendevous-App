@@ -15,7 +15,7 @@ const items: NavigationMenuItem[][] = [
       children: [
         {
           label: "Data View",
-          to:"registration/viewdata"
+          to:"/registration/viewdata"
         },
         {
           label: "About",
